@@ -2,4 +2,11 @@
 # Front matter so that Jekyll reads this file
 # This is the main SCSS file that will be parsed to CSS
 ---
-@import 'index';
+@import 'variables';
+@import 'span';
+@import 'base';
+@import 'components';
+@import 'landing';
+
+
+

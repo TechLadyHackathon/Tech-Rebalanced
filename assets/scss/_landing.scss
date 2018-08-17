@@ -1,0 +1,44 @@
+
+.c-landing {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.c-landing__hed {
+}
+
+.c-landing__hed h1 {
+  font-family: $font-playfair;
+  font-size: $size-64;
+}
+
+.c-landing__hed .subHed {
+  font-family: $font-playfair;
+  font-size: $size-24;
+}
+
+
+.c-landing__save {
+  width: $width-400;
+  height: $width-400;
+  border-radius:50%;
+  font-size:36px;
+  line-height:20px;
+  text-align:center;
+  background-color: $color-grey;
+  border: 9px solid $color-dark-grey;
+  display: flex;
+}
+
+.c-landing__save-text {
+  color: #FFF;
+  margin: auto 0;
+  align-items: center;
+}
+
+.c-landing__save-text span{
+  display: block
+}

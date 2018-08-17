@@ -1,0 +1,21 @@
+////
+/// Span
+////
+
+/// Determine column span of a section
+///
+/// @param  {Number} $columns - The number of columns to be spanned (out of 12)
+///
+/// @param  {Number} $space [0px] - Pixels to subtract from the column span (i.e margin)
+///
+/// @return {String} Return the specified span of the section
+///
+/// @example
+///   .content {
+///     // .content will take up 12 of 12 columns minus the width of a 16px margin
+///     width: span(12, $space-16);
+///   }
+///
+@function span($columns, $space: '0px') {
+  @return calc(#{percentage($columns / 12)} - #{$space});
+}
