@@ -1,44 +1,35 @@
-
-.c-landing {
-  display: flex;
-}
-
-.col {
-  flex: 1;
-}
-
-.c-landing__hed {
-}
-
-.c-landing__hed h1 {
+.c-landing__title {
   font-family: $font-playfair;
-  font-size: $size-64;
+  font-size: $size-48;
+  margin-bottom: $space-12;
 }
 
-.c-landing__hed .subHed {
-  font-family: $font-playfair;
-  font-size: $size-24;
+.c-landing__subtitle {
+  font-family: $font-sourcesans;
+  font-size: $size-14;
+  margin-bottom: $space-48;
+  font-weight: $weight-bold;
+  line-height: 1.5;
 }
-
 
 .c-landing__save {
-  width: $width-400;
-  height: $width-400;
-  border-radius:50%;
-  font-size:36px;
-  line-height:20px;
-  text-align:center;
+  width: $width-200;
+  height: $width-200;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
   background-color: $color-grey;
-  border: 9px solid $color-dark-grey;
-  display: flex;
+  border: 12px solid $color-dark-grey;
+  margin: 0 auto;
 }
+
 
 .c-landing__save-text {
-  color: #FFF;
-  margin: auto 0;
-  align-items: center;
+  font-family: $font-sourcesans;
+  position: relative;
+  top: 60px;
 }
 
-.c-landing__save-text span{
-  display: block
+.c-landing__bold {
+  font-weight: $weight-bold;
 }

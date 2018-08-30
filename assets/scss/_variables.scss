@@ -6,13 +6,37 @@ $font-playfair: 'Playfair Display', serif;
 $font-sourcesans: 'SourceSansPro', sans-serif;
 
 
+
+// ========================
+//  Space
+// ========================
+
+$space-4: 4px;
+
+$space-8: 8px;
+
+$space-12: 12px;
+
+$space-16: 16px;
+
+$space-24: 24px;
+
+$space-32: 32px;
+
+$space-48: 48px;
+
+
 // ========================
 //  Sizes
 // ========================
 
+$size-14: 14px;
+
 $size-24: 24px;
 
 $size-36: 36px;
+
+$size-48: 48px;
 
 $size-64: 64px;
 
@@ -20,8 +44,7 @@ $size-64: 64px;
 // ========================
 //  Widths
 // ========================
-
-$width-400: 400px;
+$width-200: 200px;
 
 // ========================
 //  Colors
@@ -30,5 +53,13 @@ $width-400: 400px;
 $color-grey: #d8d8d8;
 
 $color-dark-grey: #979797;
+
+
+// ========================
+//  Font Weights
+// ========================
+
+$weight-bold: 600;
+
 
 
