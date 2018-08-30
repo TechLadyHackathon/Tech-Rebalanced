@@ -17,7 +17,7 @@ title: Tech, Rebalanced
 email: techrebalanced@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Tech, Rebalanced landing page
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/tech-rebalanced" # the subpath of your site, e.g. /blog
 #url: "http://www.techrebalanced.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tech-rebalanced
 github_username:  TechRebalanced
