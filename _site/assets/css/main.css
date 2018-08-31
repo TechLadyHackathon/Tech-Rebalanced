@@ -5,7 +5,7 @@
   margin-bottom: 12px; }
 
 .c-landing__subtitle {
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   margin-bottom: 48px;
   font-weight: 600;
@@ -22,12 +22,31 @@
   margin: 0 auto; }
 
 .c-landing__save-text {
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   position: relative;
   top: 60px; }
 
 .c-landing__bold {
   font-weight: 600; }
+
+.c-about__title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 8px; }
+
+.c-about__content {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
+
+.c-bio__about {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 8px; }
+
+.c-bio__description {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px; }
 
 .l-main {
   margin: 16px; }
