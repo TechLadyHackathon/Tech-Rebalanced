@@ -8,3 +8,13 @@
   font-family: $font-sourcesans;
   font-size: $size-24;
 }
+
+.c-bio__headshot {
+  margin-bottom: $space-8;
+}
+
+.c-bio__headshot--img {
+  margin: $space-8 auto;
+  text-align:center;
+  width: 300px;
+}

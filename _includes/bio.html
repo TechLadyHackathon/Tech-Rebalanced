@@ -1,3 +1,11 @@
 <h1 class="c-bio__about"> About Us </h1>
 
 <div class="c-bio__description"> We are a passionate group of coders, data wranglers, advocates, designers, and communicators </div>
+
+{% for image in site.static_files %}
+    {% if image.path contains 'images' %}
+      <div class="c-bio__headshot">
+        <img class="c-bio__headshot--img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+      </div>
+    {% endif %}
+{% endfor %}
