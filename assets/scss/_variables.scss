@@ -5,8 +5,6 @@ $font-playfair: 'Playfair Display', serif;
 
 $font-sourcesans: 'Source Sans Pro', sans-serif;
 
-
-
 // ========================
 //  Space
 // ========================
@@ -33,6 +31,8 @@ $space-48: 48px;
 $size-14: 14px;
 
 $size-16: 16px;
+
+$size-18: 18px;
 
 $size-24: 24px;
 
@@ -64,4 +64,39 @@ $color-dark-grey: #979797;
 $weight-bold: 600;
 
 
+// ========================
+//  Breakpoints
+// ========================
 
+
+/// Reverse Small device breakpoint
+///
+/// @type Variable
+// $breakpoint-xsmall: max-width: 575px;
+
+/// Small device breakpoint
+///
+/// @type Variable
+$breakpoint-small: 576px;
+
+/// Medium device breakpoint
+///
+/// @type Variable
+$breakpoint-medium: 784px;
+
+/// Large device breakpoint
+///
+/// @type Variable
+$breakpoint-large: 976px;
+
+/// XLarge device breakpoint
+///
+/// @type Variable
+$breakpoint-xlarge: 1200px;
+
+
+@mixin breakpoint($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

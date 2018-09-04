@@ -9,12 +9,28 @@
   font-size: $size-24;
 }
 
+.c-bio__photos {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($breakpoint-small) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .c-bio__headshot {
-  margin-bottom: $space-8;
+  margin: $space-8 auto;
+  width: 250px;
 }
 
 .c-bio__headshot--img {
-  margin: $space-8 auto;
-  text-align:center;
-  width: 300px;
+  width: 100%;
+}
+
+.c-bio__name {
+  text-align: center;
+  font-family: $font-sourcesans;
+  font-size: $size-18;
+
 }

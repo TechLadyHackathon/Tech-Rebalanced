@@ -52,13 +52,25 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px; }
 
+.c-bio__photos {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 576px) {
+    .c-bio__photos {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+
 .c-bio__headshot {
-  margin-bottom: 8px; }
+  margin: 8px auto;
+  width: 250px; }
 
 .c-bio__headshot--img {
-  margin: 8px auto;
+  width: 100%; }
+
+.c-bio__name {
   text-align: center;
-  width: 300px; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px; }
 
 .l-main {
   margin: 16px; }

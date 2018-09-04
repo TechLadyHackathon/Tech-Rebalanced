@@ -2,10 +2,17 @@
 
 <div class="c-bio__description"> We are a passionate group of coders, data wranglers, advocates, designers, and communicators </div>
 
-{% for image in site.static_files %}
-    {% if image.path contains 'images' %}
-      <div class="c-bio__headshot">
-        <img class="c-bio__headshot--img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-      </div>
-    {% endif %}
-{% endfor %}
+<div class="c-bio__photos">
+  {% for image in site.static_files %}
+      {% if image.path contains 'images' %}
+      {% assign name = image.path | split: '.png' %}
+
+        <div class="c-bio__headshot">
+          <img class="c-bio__headshot--img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="c-bio__name">
+          {{ name | split: '/assets/images/' | last | remove: '"]' | replace: '_', ' ' | upcase }}
+          </div>
+        </div>
+      {% endif %}
+  {% endfor %}
+</div>
