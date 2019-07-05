@@ -11,8 +11,12 @@
 .c-cta__box {
     width: 100%;
     height: 300px;
-    margin: $space-32;
+    margin: $space-16 0;
     background-color: rgb(149, 197, 249);
+
+    @include breakpoint($breakpoint-medium) {
+        margin: $space-32;
+    }
 }
 
 .c-cta__title {

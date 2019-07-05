@@ -57,7 +57,7 @@ nav ul {
   line-height: 1.2; }
 
 .c-about {
-  margin: 16px;
+  margin: 32px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -84,8 +84,11 @@ nav ul {
 .c-cta__box {
   width: 100%;
   height: 300px;
-  margin: 32px;
+  margin: 16px 0;
   background-color: #95c5f9; }
+  @media (min-width: 784px) {
+    .c-cta__box {
+      margin: 32px; } }
 
 .c-cta__title {
   color: #000460;
