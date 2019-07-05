@@ -1,13 +1,22 @@
 
-.c-about__title {
-  font-family: $font-playfair;
-  font-size: $size-36;
-  margin-bottom: $space-8;
+.c-about {
+  margin: $space-16;
+  font-size: $size-18;
+  font-family: $font-roboto-light;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  
+  @include breakpoint($breakpoint-medium) {
+    padding: $space-16 72px;
+    margin: $space-32;
+  }
 }
 
-.c-about__content {
-  font-size: $size-16;
-  font-family: $font-sourcesans;
-  font-weight: 400;
+.c-about p {
+  margin: 0;
+  line-height: 1.3;
 }
+
 

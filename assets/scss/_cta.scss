@@ -1,0 +1,24 @@
+.c-cta {
+    display: flex;
+    flex-direction: column;
+    margin: $space-32;
+
+    @include breakpoint($breakpoint-medium) {
+        flex-direction: row;
+    }
+}
+
+.c-cta__box {
+    width: 100%;
+    height: 300px;
+    margin: $space-32;
+    background-color: rgb(149, 197, 249);
+}
+
+.c-cta__title {
+    color: rgb(0, 4, 96);
+    font-family: $font-roboto;
+    font-size: $size-32;
+    text-align: center;
+    text-transform: uppercase;
+}

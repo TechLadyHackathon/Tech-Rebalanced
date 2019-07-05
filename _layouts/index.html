@@ -4,27 +4,21 @@
 {% include head.html %}
 
 <body>
+  <nav>
+    <ul>
+      <li class="c-logo"> TR </li>
+    </ul>
+  </nav>
   <main class="l-main" aria-label="Content">
-
-    <section class="l-landing">
-      {% include landing.html %}
-    <section>
-
-    <section class="l-about">
+    <section class="l-hero">
+      {% include hero.html %}
+    </section>
+   <section class="l-about">
       {% include about.html %}
-    <section>
-
-    <section class="l-bio">
-      {% include bio.html %}
-    <section>
-
-    <section class="l-sponsors">
-      {% include sponsors.html %}
-    <section>
-
+   </section>
+   <section class="l-cta">
+      {% include cta.html %}
+   </section>
   </main>
 </body>
-
-{% include footer.html %}
-
 </html>

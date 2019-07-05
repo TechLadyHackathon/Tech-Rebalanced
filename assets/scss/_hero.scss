@@ -1,0 +1,39 @@
+.l-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(99,45,253,1) 100%);
+  padding: $space-48;
+}
+
+.c-hero__text {
+  margin: $space-16;
+
+  @include breakpoint($breakpoint-medium) {
+    margin: $space-24;
+    padding: 0 $space-16;  
+  }
+}
+
+.c-hero__title {
+  color: transparent;
+  font-family: $font-roboto;
+  font-size: $size-48;
+  letter-spacing: 1.5px;
+  -webkit-text-stroke: 1px #fff;
+  text-transform: uppercase;
+
+  @include breakpoint($breakpoint-medium) {
+    font-size: $size-72;
+  }
+}
+
+.c-hero__subtitle {
+  color: #fff;
+  font-size: $size-24;
+  font-family: $font-roboto-light;
+  font-weight: lighter;
+  line-height: 1.2;
+}

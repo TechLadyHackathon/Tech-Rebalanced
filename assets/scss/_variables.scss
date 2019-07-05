@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Condensed:700|Roboto:300|Rubik+Mono+One&display=swap');
+
 // ========================
 //  Fonts
 // ========================
-$font-playfair: 'Playfair Display', serif;
 
-$font-sourcesans: 'Source Sans Pro', sans-serif;
+$font-roboto: 'Roboto Condensed', sans-serif;
+$font-bree: 'Bree Serif', serif;
+$font-rubik: 'Rubik Mono One', sans-serif;
+$font-roboto-light: 'Roboto', sans-serif;
+
+
 
 // ========================
 //  Space
@@ -36,11 +42,15 @@ $size-18: 18px;
 
 $size-24: 24px;
 
+$size-32: 32px;
+
 $size-36: 36px;
 
 $size-48: 48px;
 
 $size-64: 64px;
+
+$size-72: 72px;
 
 
 // ========================
