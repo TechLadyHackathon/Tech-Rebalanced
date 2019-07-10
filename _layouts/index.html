@@ -4,11 +4,7 @@
 {% include head.html %}
 
 <body>
-  <nav>
-    <ul>
-      <li class="c-logo"> TR </li>
-    </ul>
-  </nav>
+  {% include nav.html %}
   <main class="l-main" aria-label="Content">
     <section class="l-hero">
       {% include hero.html %}
@@ -20,5 +16,6 @@
       {% include cta.html %}
    </section>
   </main>
+  {% include footer.html %}
 </body>
 </html>

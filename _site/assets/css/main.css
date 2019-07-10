@@ -14,7 +14,7 @@ nav ul {
 
 .c-logo {
   color: black;
-  font-size: 48px;
+  font-size: 32px;
   font-family: "Rubik Mono One", sans-serif;
   padding-left: 8px;
   -webkit-text-stroke: 1px #fff; }
@@ -25,7 +25,6 @@ nav ul {
 .l-hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: #22c1c3;
   background: linear-gradient(0deg, #22c1c3 0%, #632dfd 100%);
@@ -44,30 +43,42 @@ nav ul {
   font-size: 48px;
   letter-spacing: 1.5px;
   -webkit-text-stroke: 1px #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 24px 0; }
   @media (min-width: 784px) {
     .c-hero__title {
-      font-size: 72px; } }
+      font-size: 72px;
+      letter-spacing: 1.5px; } }
 
 .c-hero__subtitle {
   color: #fff;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin: 24px 0; }
+
+.c-hero__save-date {
+  color: white;
+  font-size: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 24px 0;
+  text-transform: uppercase; }
+  .c-hero__save-date span {
+    font-family: "Bree Serif", serif; }
 
 .c-about {
   margin: 32px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-content: center; }
+  max-width: 925px; }
   @media (min-width: 784px) {
     .c-about {
       padding: 16px 72px;
-      margin: 32px; } }
+      margin: 16px auto; } }
+
+.c-about__title {
+  font-family: "Roboto Condensed", sans-serif; }
 
 .c-about p {
   margin: 0;
@@ -79,16 +90,25 @@ nav ul {
   margin: 32px; }
   @media (min-width: 784px) {
     .c-cta {
-      flex-direction: row; } }
+      flex-direction: row;
+      margin: 0 auto;
+      max-width: 1300px; } }
 
 .c-cta__box {
   width: 100%;
-  height: 300px;
   margin: 16px 0;
-  background-color: #95c5f9; }
+  background-color: #95c5f9;
+  border-radius: 2px;
+  color: #000460;
+  font-family: "Roboto", sans-serif;
+  padding: 16px 0; }
+  .c-cta__box a {
+    text-decoration: underline;
+    color: #000460; }
   @media (min-width: 784px) {
     .c-cta__box {
-      margin: 32px; } }
+      margin: 32px;
+      padding: 16px; } }
 
 .c-cta__title {
   color: #000460;
@@ -96,3 +116,37 @@ nav ul {
   font-size: 32px;
   text-align: center;
   text-transform: uppercase; }
+
+.c-subscribe__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px; }
+  .c-subscribe__form label {
+    margin-bottom: 16px; }
+  .c-subscribe__form input {
+    margin: 0 32px;
+    padding: 12px;
+    border: 2px solid #000460; }
+  .c-subscribe__form input[type=email] {
+    border-radius: 4px;
+    min-width: 200px; }
+  .c-subscribe__form input[type=submit] {
+    border-radius: 18px;
+    width: 150px; }
+    .c-subscribe__form input[type=submit]:hover {
+      background-color: #000460;
+      color: white;
+      cursor: pointer; }
+
+.c-subscribe__signup {
+  display: flex;
+  justify-content: space-around; }
+
+.c-cta__donate {
+  padding: 32px; }
+
+.c-footer {
+  height: 100px;
+  background-color: black;
+  color: white; }

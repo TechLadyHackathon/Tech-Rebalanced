@@ -3,15 +3,17 @@
   margin: $space-32;
   font-size: $size-18;
   font-family: $font-roboto-light;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-content: center;
+  max-width: 925px;
   
   @include breakpoint($breakpoint-medium) {
     padding: $space-16 72px;
-    margin: $space-32;
+    margin: $space-16 auto;
   }
+}
+
+.c-about__title {
+  font-family: $font-roboto;
+  $font-size: $size-24;
 }
 
 .c-about p {

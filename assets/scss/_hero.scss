@@ -1,7 +1,6 @@
 .l-hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(99,45,253,1) 100%);
@@ -24,9 +23,11 @@
   letter-spacing: 1.5px;
   -webkit-text-stroke: 1px #fff;
   text-transform: uppercase;
+  margin: $space-24 0;
 
   @include breakpoint($breakpoint-medium) {
     font-size: $size-72;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -36,4 +37,17 @@
   font-family: $font-roboto-light;
   font-weight: lighter;
   line-height: 1.2;
+  margin: $space-24 0;
+}
+
+.c-hero__save-date {
+  color: white;
+  font-size: $size-32;
+  font-family: $font-roboto;
+  margin: $space-24 0;
+  text-transform: uppercase;
+
+  span {
+    font-family: $font-bree;
+  }
 }
