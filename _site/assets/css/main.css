@@ -181,7 +181,8 @@ nav ul {
 
 .c-cta__subscribe {
   grid-row: 1 / 2;
-  grid-column: 1 / span 8; }
+  grid-column: 1 / span 8;
+  padding: 16px; }
   @media (min-width: 784px) {
     .c-cta__subscribe {
       grid-column: 4 / span 5; } }
