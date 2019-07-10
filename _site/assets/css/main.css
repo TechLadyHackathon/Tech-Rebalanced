@@ -215,16 +215,20 @@ h2.c-cta__title {
   border-radius: 4px; }
 
 .c-footer {
-  height: 100px;
   background-color: black;
   color: white;
   display: flex;
+  padding: 8px;
   align-items: flex-end; }
 
 .c-footer__copyright {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  padding: 16px; }
+  font-family: "Roboto", sans-serif;
+  padding: 16px 8px; }
+  @media (min-width: 784px) {
+    .c-footer__copyright {
+      font-size: 14px;
+      padding: 16px; } }
 
 .c-footer__contact {
   display: flex;

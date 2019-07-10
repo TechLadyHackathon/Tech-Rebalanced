@@ -1,15 +1,21 @@
 .c-footer {
-    height: 100px;
     background-color: black;
     color: white;
     display: flex;
+    padding: $space-8;
     align-items: flex-end;
 }
 
 .c-footer__copyright {
+    font-size: $size-14;
     font-family: $font-roboto-light;
-    font-size: 14px;
-    padding: $space-16;
+    padding: $space-16 $space-8;
+
+
+    @include breakpoint($breakpoint-medium) {
+        font-size: $size-14;
+        padding: $space-16;
+    }
 }
 
 
