@@ -2,12 +2,33 @@
     height: 100px;
     background-color: black;
     color: white;
+    display: flex;
+    align-items: flex-end;
 }
 
 .c-footer__copyright {
     font-family: $font-roboto-light;
     font-size: 14px;
-    top: 75px;
-    position: relative;
-    left: 10px;
+    padding: $space-16;
+}
+
+
+.c-footer__contact {
+    display: flex;
+    font-family: $font-roboto;
+    
+    li {
+        list-style-type: none;
+        padding: 0 $space-8;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }

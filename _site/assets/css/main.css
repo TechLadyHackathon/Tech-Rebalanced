@@ -203,11 +203,24 @@ nav ul {
 .c-footer {
   height: 100px;
   background-color: black;
-  color: white; }
+  color: white;
+  display: flex;
+  align-items: flex-end; }
 
 .c-footer__copyright {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  top: 75px;
-  position: relative;
-  left: 10px; }
+  padding: 16px; }
+
+.c-footer__contact {
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif; }
+  .c-footer__contact li {
+    list-style-type: none;
+    padding: 0 8px; }
+  .c-footer__contact a {
+    text-decoration: none;
+    color: white; }
+    .c-footer__contact a:hover {
+      cursor: pointer;
+      text-decoration: underline; }
