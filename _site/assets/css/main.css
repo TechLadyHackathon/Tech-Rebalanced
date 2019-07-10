@@ -205,3 +205,10 @@ nav ul {
   height: 100px;
   background-color: black;
   color: white; }
+
+.c-footer__copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  top: 75px;
+  position: relative;
+  left: 10px; }
