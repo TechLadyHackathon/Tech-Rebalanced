@@ -3,11 +3,11 @@
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 1fr;
     flex-direction: column;
-    margin: $space-32;
+    margin: 0 $space-32 $space-32 $space-32;
 
     @include breakpoint($breakpoint-medium) {
         flex-direction: row;
-        margin: $space-32 auto;
+        margin: 0 auto $space-32 auto;
         max-width: 1300px;
     }
 }
@@ -31,13 +31,14 @@
     }
 }
 
-.c-cta__title {
+h2.c-cta__title {
     color: rgb(0, 4, 96);
     font-family: $font-roboto;
     font-size: $size-32;
     text-align: center;
     text-transform: uppercase;
     line-height: 2;
+    margin: $space-8;
 }
 
 
@@ -66,21 +67,19 @@
 .c-subscribe__signup input {
     padding: $space-12;
     border: 1px solid rgb(0, 4, 96);
-    margin: $space-8 $space-16;
+    margin: $space-8 $space-16 $space-16 $space-16;
+    max-width: 180px;
 
     @include breakpoint($breakpoint-medium) {
-        margin: 0 $space-16;
+        margin: $space-16;
     }
 }
 
 .c-subscribe__signup input[type=email] {
     border-radius: 4px;
-    width: 150px;
 }
 
 .c-subscribe__signup input[type=submit] {
-    border-radius: 18px;
-    width: 150px;
 
     @include breakpoint($breakpoint-medium) {
         width: 13rem;
@@ -124,4 +123,10 @@
         grid-column: 1 / span 4;
     }
 
+}
+
+
+.clear input {
+    width: 180px;
+    border-radius: 4px;
 }
