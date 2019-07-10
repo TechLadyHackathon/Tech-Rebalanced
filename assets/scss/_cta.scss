@@ -1,32 +1,33 @@
 .c-cta {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1fr;
     flex-direction: column;
     margin: $space-32;
 
     @include breakpoint($breakpoint-medium) {
         flex-direction: row;
-        margin: 0 auto;
+        margin: $space-32 auto;
         max-width: 1300px;
     }
 }
 
 .c-cta__box {
-    width: 100%;
     margin: $space-16 0;
     background-color: rgb(149, 197, 249);
     border-radius: 2px;
     color: rgb(0, 4, 96);
     font-family: $font-roboto-light;
-    padding: $space-16 0;
+    padding: 0 0 $space-16 0;
+    border: 2px solid rgb(0, 4, 96);
 
     a { 
-        text-decoration: underline;
         color: rgb(0, 4, 96);
     }
 
     @include breakpoint($breakpoint-medium) {
         margin: $space-32;
-        padding: $space-16;
+        padding: 0 0 $space-16 0;
     }
 }
 
@@ -36,49 +37,89 @@
     font-size: $size-32;
     text-align: center;
     text-transform: uppercase;
+    line-height: 2;
 }
+
 
 .c-subscribe__form {
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: $size-18; 
-
-
-    label { 
-        margin-bottom: $space-16;
-    }
-
-    input {
-        margin: 0 $space-32;
-        padding: $space-12;
-        border: 2px solid rgb(0, 4, 96);
-
-    }
-
-    input[type=email] {
-        border-radius: 4px;
-        min-width: 200px;
-    }
-
-    input[type=submit] {
-        border-radius: 18px;
-        width: 150px;
-
-        &:hover {   
-            background-color: rgb(0, 4, 96);
-            color: white;
-            cursor: pointer;
-        }
-    }
-
 }
+
 
 .c-subscribe__signup {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+
+    @include breakpoint($breakpoint-small) {
+        flex-direction: row;
+    }
+}
+
+
+.c-subscribe__form label { 
+    margin-bottom: $space-16;
+}
+
+.c-subscribe__signup input {
+    padding: $space-12;
+    border: 1px solid rgb(0, 4, 96);
+    margin: $space-8 $space-16;
+
+    @include breakpoint($breakpoint-medium) {
+        margin: 0 $space-16;
+    }
+}
+
+.c-subscribe__signup input[type=email] {
+    border-radius: 4px;
+    width: 150px;
+}
+
+.c-subscribe__signup input[type=submit] {
+    border-radius: 18px;
+    width: 150px;
+
+    @include breakpoint($breakpoint-medium) {
+        width: 13rem;
+    }
+
+    &:hover {   
+        background-color: rgb(0, 4, 96);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+.c-cta__subscribe {
+    grid-row: 1 / 2;
+    grid-column: 1 / span 8;
+
+    @include breakpoint($breakpoint-medium) {
+        grid-column: 4 / span 5;
+    }
+
+    @include breakpoint($breakpoint-large) {
+        grid-column: 5 / span 4;
+    }
 }
 
 .c-cta__donate {
     padding: $space-32;
+    grid-column: 1 / span 8;
+    grid-row: 2 / 2;
+
+    @include breakpoint($breakpoint-medium) {
+        grid-column: 1 / span 3;
+        grid-row: 1 / 2;
+        padding: $space-16;
+    }
+
+    @include breakpoint($breakpoint-large) {
+        grid-column: 1 / span 4;
+    }
+
 }
