@@ -62,6 +62,7 @@ h2.c-cta__title {
 
 .c-subscribe__form label { 
     margin-bottom: $space-16;
+    line-height: 24.3px;
 }
 
 .c-subscribe__signup input {
@@ -125,6 +126,12 @@ h2.c-cta__title {
 
 }
 
+.c-cta__donate-text {
+    max-width: 450px;
+    margin: $space-16 auto;
+    font-size: $size-18;
+    line-height: 24.3px;
+}
 
 .clear input {
     width: 180px;

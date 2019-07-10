@@ -155,7 +155,8 @@ h2.c-cta__title {
       flex-direction: row; } }
 
 .c-subscribe__form label {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  line-height: 24.3px; }
 
 .c-subscribe__signup input {
   padding: 12px;
@@ -200,6 +201,12 @@ h2.c-cta__title {
   @media (min-width: 976px) {
     .c-cta__donate {
       grid-column: 1 / span 4; } }
+
+.c-cta__donate-text {
+  max-width: 450px;
+  margin: 16px auto;
+  font-size: 18px;
+  line-height: 24.3px; }
 
 .clear input {
   width: 180px;
