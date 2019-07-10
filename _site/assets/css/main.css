@@ -38,7 +38,6 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #22c1c3;
   background: linear-gradient(0deg, #22c1c3 0%, #632dfd 100%);
   padding: 48px; }
 
