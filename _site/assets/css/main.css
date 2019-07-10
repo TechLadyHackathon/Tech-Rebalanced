@@ -94,6 +94,8 @@ nav ul {
   color: black;
   text-decoration: none;
   font-weight: bold; }
+  .c-about a:hover {
+    color: #95c5f9; }
 
 .c-about__title {
   font-family: "Roboto Condensed", sans-serif; }
