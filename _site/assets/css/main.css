@@ -108,16 +108,12 @@ nav ul {
   line-height: 1.5; }
 
 .c-cta {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 1fr;
+  display: flex;
   flex-direction: column;
-  margin: 0 32px 32px 32px; }
+  justify-content: center; }
   @media (min-width: 784px) {
     .c-cta {
-      flex-direction: row;
-      margin: 0 auto 32px auto;
-      max-width: 1300px; } }
+      flex-direction: row; } }
 
 .c-cta__box {
   margin: 16px 0;
@@ -125,7 +121,6 @@ nav ul {
   border-radius: 2px;
   color: #000460;
   font-family: "Roboto", sans-serif;
-  padding: 0 0 16px 0;
   border: 2px solid #000460; }
   .c-cta__box a {
     color: #000460; }
@@ -142,6 +137,9 @@ h2.c-cta__title {
   text-transform: uppercase;
   line-height: 2;
   margin: 8px; }
+
+#donation-amount {
+  margin-right: 0px; }
 
 .c-subscribe__form {
   display: flex;
@@ -172,47 +170,68 @@ h2.c-cta__title {
 .c-subscribe__signup input[type=email] {
   border-radius: 4px; }
 
-@media (min-width: 784px) {
-  .c-subscribe__signup input[type=submit] {
-    width: 13rem; } }
-.c-subscribe__signup input[type=submit]:hover {
+.c-subscribe__signup input[type=submit] {
   background-color: #000460;
-  color: white;
-  cursor: pointer; }
+  color: white; }
+  @media (min-width: 784px) {
+    .c-subscribe__signup input[type=submit] {
+      width: 13rem; } }
+  .c-subscribe__signup input[type=submit]:hover {
+    color: #000460;
+    background-color: white;
+    cursor: pointer; }
 
 .c-cta__subscribe {
-  grid-row: 1 / 2;
-  grid-column: 1 / span 8;
   padding: 16px; }
-  @media (min-width: 784px) {
-    .c-cta__subscribe {
-      grid-column: 4 / span 5; } }
-  @media (min-width: 976px) {
-    .c-cta__subscribe {
-      grid-column: 5 / span 4; } }
-
-.c-cta__donate {
-  padding: 32px;
-  grid-column: 1 / span 8;
-  grid-row: 2 / 2; }
-  @media (min-width: 784px) {
-    .c-cta__donate {
-      grid-column: 1 / span 3;
-      grid-row: 1 / 2;
-      padding: 16px; } }
-  @media (min-width: 976px) {
-    .c-cta__donate {
-      grid-column: 1 / span 4; } }
-
-.c-cta__donate-text {
-  max-width: 450px;
-  margin: 16px auto;
-  font-size: 18px;
-  line-height: 24.3px; }
 
 .clear input {
   width: 180px;
   border-radius: 4px; }
+
+.c-cta__donate {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px; }
+
+.c-cta__donate-text {
+  margin: 16px auto;
+  font-size: 18px;
+  line-height: 24.3px; }
+
+.c-cta__stripe #donate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  @media (min-width: 576px) {
+    .c-cta__stripe #donate {
+      flex-direction: row; } }
+
+.c-cta__stripe {
+  margin-bottom: 12px;
+  align-self: center; }
+
+.c-cta__stripe input {
+  border-style: none;
+  border: 1px solid #000460;
+  border-radius: 4px;
+  padding: 12px;
+  max-width: 180px;
+  margin: 8px 16px 16px 16px; }
+
+.c-cta__stripe button {
+  background-color: #000460;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 12px;
+  padding: 12px;
+  border: 1px solid #000460;
+  margin: 8px 16px 16px 16px;
+  max-width: 180px; }
+
+.c-cta__donate-stripe {
+  margin-bottom: 16px; }
 
 .c-footer {
   background-color: black;

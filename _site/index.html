@@ -48,6 +48,7 @@
     <h2 class="c-hero__save-date"> Save the date: <span>10&#8226;19&#8226;19</span> </h2>
     <h3 class="c-hero__subtitle"> A day for underrepresented genders in tech, from experienced coders to total newbies, <br/> to gather for civic hacking, training, and community building in a supportive environment. </h3>
 </div>
+
     </section>
    <section class="l-about">
       
@@ -67,34 +68,49 @@
     <h4> Learn more about Tech, Rebalanced 2019, our shift in leadership and the formation of the inaugural advisory board. <a href="https://docs.google.com/document/d/1FuFwjVhX4dDHUILNX0Dgdnwe2BxVwJggmM6mNHCyXuU/edit?usp=sharing"> &#8594; </a> </h4>
   </div>
 
-  <h4 class="c-about__apply"> Apply to join the Tech, Rebalanced advisory board. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbN-dI_VwOuZe6ctHJ55JCoPYrtkai0nWCdrYk2mA3MP09gA/viewform"> &#8594; </a> </h4>
-
 </div>
 
    </section>
    <section class="l-cta">
       <div class="c-cta">
+    <div class="c-cta__box c-cta__donate"> 
+    <h2 class="c-cta__title"> Donate </h2>
+
+    <div class="c-cta__donate-stripe"> Donate below with Stripe: </div class="c-cta__donate-text">
+
+    <form class="c-cta__stripe">
+        <div id="donate">
+
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">$</span>
+            <input type="number" id="donation-amount" class="form-control" value="25" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-addon">.00</span>
+          </div>
+      
+          <input type="text" class="form-control" id="special-instructions" placeholder="Special instructions">
+      
+          <button type="submit" class="btn btn-primary" id="donationButton">Make donation</button>
+        </div>
+      </form>
+    <div class="c-cta__donate-text"> Learn more about our mission and how you can support us by visiting our <a target="_blank" href="https://www.patreon.com/tech_rebalanced">Patreon</a>.</div>
+</div>
     <div class="c-cta__box c-cta__subscribe"> 
-        <h2 class="c-cta__title"> Subscribe </h2>
-        <div class="c-subscribe">
-        <div id="mc_embed_signup">
-                <form action="//techladyhackathon.us16.list-manage.com/subscribe/post?u=f6b52bf206ecba81f2bfa5c8c&amp;id=b5e4521f99" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="c-subscribe__form" id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL">Want the latest updates on Tech, Rebalanced? <br> Subscribe to our mailing list.</label>
-                    <div class="c-subscribe__signup"> 
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f6b52bf206ecba81f2bfa5c8c_b5e4521f99" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-                </div>
-                </form>
+    <h2 class="c-cta__title"> Subscribe </h2>
+    <div class="c-subscribe">
+    <div id="mc_embed_signup">
+            <form action="//techladyhackathon.us16.list-manage.com/subscribe/post?u=f6b52bf206ecba81f2bfa5c8c&amp;id=b5e4521f99" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="c-subscribe__form" id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Want the latest updates on Tech, Rebalanced? <br> Subscribe to our mailing list.</label>
+                <div class="c-subscribe__signup"> 
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f6b52bf206ecba81f2bfa5c8c_b5e4521f99" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </div>
+            </div>
+            </form>
         </div>
     </div>
-    <div class="c-cta__box c-cta__donate"> 
-        <h2 class="c-cta__title"> Donate </h2>
-        <div class="c-cta__donate-text"> Learn more about our mission and how you can support us by visiting our <a target="_blank" href="https://www.patreon.com/tech_rebalanced">Patreon</a>.</div>
-    </div>
+</div>
 </div>
    </section>
   </main>
@@ -108,4 +124,13 @@
 </div>
 
 </body>
+
+<!--- TODO: replace jquery dependent stripe integration with modern javascript -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script src="scripts/stripe.js"></script>
+
 </html>

@@ -1,0 +1,59 @@
+
+.c-cta__donate {
+    padding: $space-32;
+    display: flex;
+    flex-direction: column;
+    font-size: $size-18; 
+}
+
+.c-cta__donate-text {
+    // max-width: 430px;
+    margin: $space-16 auto;
+    font-size: $size-18;
+    line-height: 24.3px;
+}
+
+
+.c-cta__stripe #donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include breakpoint($breakpoint-small) {
+        flex-direction: row;
+    }
+}
+
+.c-cta__stripe {
+    margin-bottom: $space-12;
+    // max-width: 450px;
+    align-self:center;
+}
+
+.c-cta__stripe input {
+    border-style: none;
+    border: 1px solid rgb(0, 4, 96);
+    border-radius: 4px;
+    padding: $space-12;
+    max-width: 180px;
+    margin: 8px 16px 16px 16px;
+
+}
+
+.c-cta__stripe button {
+    background-color: rgb(0, 4, 96);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: $space-12;
+
+    padding: 12px;
+    border: 1px solid #000460;
+    margin: 8px 16px 16px 16px;
+    max-width: 180px;
+}
+
+.c-cta__donate-stripe {
+    margin-bottom: $space-16;
+}
+
